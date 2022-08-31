@@ -1,0 +1,55 @@
+Primitive Types --
+
+Byte - 1 [-128 to 127]
+short - 2 
+int - 4
+long - 8
+float - 4
+double - 8
+char - 2
+boolean - 1
+
+Now every type has a range so it can give an error
+Ex 
+-> byte age = 30
+-> int phone = 1213231231 (wrong)
+-> long phone = 123123123 (right)
+-> float pi = 3.14F (F represents Float)
+-> boolean isMinor = true/false
+
+Non Primitive Types --
+ 1. They have methods and properties ex like length,size
+    ex - String,list
+    String name = 'Roman'
+    name.length() //5
+ 2. declared with new keywords with fixed meaning (new keyword is used while creating class objects)
+    String friend = new String(original: 'Roman')
+
+String operations - Immutable
+    1. concat String name1 = "Aman" String name2 = "Sharma" return name1+name2 // AmanSharma
+    // zero indexed 
+    2. charAt - for finding position
+    3. length - for size
+    4. replace - name.replace(a,b) replaces all a's with b but it doesn't change the original string so must be stored in different variables
+    5. substring = name.substring(0,4) return first 4 characters of name. first arg - inclusive last arg - exclusive
+
+List Operations - Mutable
+    1. can be of any type like int string boolean etc.
+        int[] marks = new int[] -> initialization
+        // zero indexed
+        // if not pass valued initialized with empty value for int - zero, string - null, boolean
+    2. length property
+    3. sort method Arrays.sort(list) //import java.util.*
+    4. int[] marks = {97,98,95}
+    5. 2D arrays  - int[][] final = {{97,98,95},{10,20,30}}; // as matrix
+
+
+Casting -  two types - implicit and explicit
+double price = 100.00
+double finalPrice = price + 18 (GST)
+// implicit -> bigger sizes can have smaller sized double can cast integer automatically vice versa is not true
+// explicit -> for samller size cast it to the expected result
+
+Constants - final keyword - this value cannot be changed
+final float PI = 3.14;
+
